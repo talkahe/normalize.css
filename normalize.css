@@ -15,8 +15,12 @@ html {
   line-height: 1.15; /* 2 */
   -ms-text-size-adjust: 100%; /* 3 */
   -webkit-text-size-adjust: 100%; /* 3 */
+  box-sizing: border-box;
 }
 
+*, *:after, *:before{
+    box-sizing: inherit;
+}
 /* Sections
    ========================================================================== */
 
@@ -231,6 +235,7 @@ audio:not([controls]) {
 
 img {
   border-style: none;
+  box-sizing: content-box;
 }
 
 /**
